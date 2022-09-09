@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Comparing strings</h3>
+    <input type="button" value="compare" onclick="compare()">
+    <p id="demo"></p>
+    <script>
+        
+        function compare(){
+            var s1="hello";
+            var s2="hii";
+            if(s1===s2)
+            {
+                 document.getElementById("demo").innerHTML="Both are equal";
+            }
+            else{
+                document.getElementById("demo").innerHTML="Not equal";
+            }
+
+        }
+
+    </script>
+</body>
+</html>
