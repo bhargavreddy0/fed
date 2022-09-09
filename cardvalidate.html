@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">cardNo:</label>
+    <input type="text" name="name" id="name"><br><br>
+    <input type="button" value="ClickMe" onclick="check()">
+    <br>
+    <p id="demo"></p>
+    <script>
+        function check(){
+            var message = /^(?:3[47][0-9]{13})$/;
+            var text=document.getElementById("name").value;
+            if(text.match(message))
+            {
+                document.write("yes its a valid cardNo.");
+            }
+            else{
+                document.write("no its not a valid cardNo.");
+            }
+        }
+    </script>
+</body>
+</html>
